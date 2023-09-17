@@ -1,0 +1,345 @@
+.body .content-wrap {
+    position: absolute;
+    left: 50%;
+    /* top: 100vh - 20px; */
+    width: 80%;
+    transform: translate(-50%, 0);
+}
+
+.body .content-wrap .content-frame {
+    position: relative;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    width: 100%;
+    /* height: 400px; */
+    gap: 60px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0, 25px, 45px, rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    backdrop-filter: blur(50px);
+    transition: all 0.5s;
+}
+
+.body .content-wrap .content-frame.about {
+    height: 450px;
+}
+
+.body .content-wrap .content-frame.about .about-title {
+    font-family: "Trebuchet MS";
+    font-size: 2em;
+    background: linear-gradient(140deg, #ffc107, #e91e63);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.body .content-wrap .content-frame.about .about-content {
+    font-family: "Times New Roman";
+    font-size: 1.6em;
+    color: #fff;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    width: 50%;
+    transform: translate(-80%, 0);
+}
+
+.body .content-wrap .content-frame.about .about-content .icon-head {
+    position: absolute;
+    left: 110%;
+    top: 0%;
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.body .content-wrap .content-frame.about .about-content .icon-photo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 280px;
+    height: 280px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.body .content-wrap .content-frame.about .about-content .icon-photo img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.body .content-wrap .content-frame.about .about-content .icon-text-frame {
+    position: absolute;
+    left: 75%;
+    top: 75%;
+    background-color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    transition: all 0.5s;
+}
+
+.body .content-wrap .content-frame.about .about-content .icon-text-frame .icon-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-color: #f66;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+    transition: all 0.5s;
+}
+
+.body .content-wrap .content-frame.about .about-content .icon-text-frame .icon-text .icon-text-span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: .9em;
+    /* overflow: hidden; */
+    opacity: 0;
+    transition-delay: ease-in-out 0.5s;
+    /* transition: all 0.2s; */
+}
+
+.body .content-wrap .content-frame.about .about-content .icon-text-frame:hover {
+    position: absolute;
+    left: 0;
+    top: 75%;
+    background-color: #fff;
+    width: 300px;
+    height: 60px;
+    border-radius: 30px;
+}
+
+.body .content-wrap .content-frame.about .about-content .icon-text-frame:hover .icon-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-color: #f66;
+    width: 280px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+    transition: all 0.5s;
+}
+
+.body .content-wrap .content-frame.about .about-content .icon-text-frame:hover .icon-text .icon-text-span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: .9em;
+    /* overflow: hidden; */
+    opacity: 1;
+}
+
+.body .content-wrap .content-frame.products {
+    position: absolute;
+    top: 620px;
+    height: 2000px;
+}
+
+.body .content-wrap .content-frame.products .pf-title {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.body .content-wrap .content-frame.products .pf-title h2 {
+    font-size: 3em;
+    background: linear-gradient(220deg, #ffc107, #e91e63);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.body .content-wrap .content-frame.products .pf-frames {
+    position: absolute;
+    top: 10em;
+    left: 50%;
+    width: 100%;
+    height: 35%;
+    transform: translate(-50%, 0);
+    justify-content: center;
+    align-items: center;
+}
+
+.body .content-wrap .content-frame.products .pf-frames .products-frame {
+    gap: 60px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0, 25px, 45px, rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    backdrop-filter: blur(50px);
+}
+
+.body .content-wrap .content-frame.products .pf-frames .products-frame.lockor-frame {
+    position: absolute;
+    left: 25%;
+    width: 40%;
+    height: 80%;
+    transform: translate(-50%);
+}
+
+.body .content-wrap .content-frame.products .pf-frames .products-frame.er-frame {
+    position: absolute;
+    left: 75%;
+    width: 40%;
+    height: 80%;
+    transform: translate(-50%);
+}
+
+.body .content-wrap .content-frame.products .pf-frames .products-frame.cypher-frame {
+    position: absolute;
+    left: 25%;
+    top: 90%;
+    width: 40%;
+    height: 80%;
+    transform: translate(-50%);
+}
+
+.body .content-wrap .content-frame.products .pf-frames .products-frame.bs-frame {
+    position: absolute;
+    left: 75%;
+    top: 90%;
+    width: 40%;
+    height: 80%;
+    transform: translate(-50%);
+}
+
+.body .content-wrap .content-frame.products .pf-frames .products-frame.stones-frame {
+    position: absolute;
+    left: 25%;
+    top: 180%;
+    width: 40%;
+    height: 80%;
+    transform: translate(-50%);
+}
+
+.body .content-wrap .content-frame.products .pf-frames .products-frame.add-frame {
+    position: absolute;
+    left: 75%;
+    top: 180%;
+    width: 40%;
+    height: 80%;
+    transform: translate(-50%);
+}
+
+.body .content-wrap .content-frame.products .pf-frames .products-frame .pf-title {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.body .content-wrap .content-frame.products .pf-frames .products-frame .pf-title ion-icon {
+    position: absolute;
+    top: -25%;
+    left: 50%;
+    width: 150px;
+    height: 150px;
+    transform: translate(-50%, -50%);
+}
+
+.body .content-wrap .content-frame.products .pf-frames .products-frame .pf-title span {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4em;
+    font-weight: 600;
+    background: linear-gradient(220deg, #02dbb0, #007adf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.body .content-wrap .content-frame.products .pf-frames .products-frame .products-buttons {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    width: 60%;
+    height: 40%;
+    transform: translate(-50%, -50%);
+}
+
+.body .content-wrap .content-frame.products .pf-frames .products-frame .products-buttons a {
+    position: absolute;
+    width: 40%;
+    height: 40px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border: #f66 solid 5px;
+    border-radius: 25px;
+    background-color: #f66;
+    transition: all 0.5s;
+}
+
+.body .content-wrap .content-frame.products .pf-frames .products-frame .products-buttons a.goto-products {
+    position: absolute;
+    top: 0%;
+    width: 50%;
+    transform: translate(-50%, 0);
+}
+
+.body .content-wrap .content-frame.products .pf-frames .products-frame .products-buttons a.goto-github {
+    position: absolute;
+    top: 30%;
+    width: 50%;
+    transform: translate(-50%, 0);
+}
+
+.body .content-wrap .content-frame.products .pf-frames .products-frame .products-buttons a.goto-gitee {
+    position: absolute;
+    top: 60%;
+    width: 50%;
+    transform: translate(-50%, 0);
+}
+
+.body .content-wrap .content-frame.products .pf-frames .products-frame .products-buttons a ion-icon {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(0, -50%);
+    font-size: 20px;
+    color: #000;
+}
+
+.body .content-wrap .content-frame.products .pf-frames .products-frame .products-buttons a span {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(0, -50%);
+    font-size: 20px;
+    color: #000;
+}
+
+.body .content-wrap .content-frame.products .pf-frames .products-frame .products-buttons a:hover {
+    background-color: #33f;
+    border: #33f solid 5px;
+}
+
+.body .content-wrap .content-frame.products .pf-frames .products-frame .products-buttons a:hover ion-icon {
+    color: #fff;
+}
+
+.body .content-wrap .content-frame.products .pf-frames .products-frame .products-buttons a:hover span {
+    color: #fff;
+}
