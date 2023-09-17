@@ -1,0 +1,72 @@
+.cookie-wrapper {
+    position: fixed;
+    bottom: 50px;
+    right: -370px;
+    max-width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px 25px 22px;
+    transition: all 0.3s ease;
+    z-index: 1;
+}
+
+.cookie-wrapper.show {
+    right: 20px;
+}
+
+.cookie-wrapper header {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.cookie-wrapper header i {
+    color: #4070f4;
+    font-size: 32px;
+}
+
+.cookie-wrapper header h2 {
+    color: #4070f4;
+    font-weight: 500;
+}
+
+.cookie-wrapper .data {
+    margin-top: 16px;
+}
+
+.cookie-wrapper .data p {
+    color: #333;
+    font-size: 16px;
+}
+
+.cookie-wrapper .data p a {
+    color: #4070f4;
+    text-decoration: none;
+}
+
+.cookie-wrapper .data p a:hover {
+    text-decoration: underline;
+}
+
+.cookie-wrapper .buttons {
+    margin-top: 16px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cookie-wrapper .buttons .button {
+    border: none;
+    color: #fff;
+    padding: 8px 0;
+    border-radius: 5px;
+    background: #4070f4;
+    cursor: pointer;
+    width: calc(100% / 2 - 10px);
+    transition: all 0.2s ease;
+}
+
+.cookie-wrapper .buttons .button:hover {
+    background: #034bf1;
+}

@@ -1,0 +1,30 @@
+div.body div.content {
+    position: absolute;
+    top: 800px;
+    left: 50%;
+    width: 90%;
+    height: 400px;
+    transform: translate(-50%, 0);
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0, 25px, 45px, rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    backdrop-filter: blur(50px);
+}
+
+div.body div.content span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 90%;
+    height: 90%;
+    font-size: 2em;
+    font-weight: 550;
+    font-family: Verdana, Geneva, sans-serif;
+    background: linear-gradient(90deg, #02dbb0, #007adf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: translate(-50%, -50%);
+}
