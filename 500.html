@@ -1,22 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title data-react-helmet="true">500 | kanjunzhe</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- <meta http-equiv="refresh" content="20;url='https://github.com/cloudResource/error-page'"> -->
     <link rel="stylesheet" href="css/500.css">
+    <link rel="stylesheet" href="css/head.css">
+    <link rel="stylesheet" href="css/nail.css">
 
     <link rel="shortcut icon" href="img/bm.png">
 </head>
 
 <body>
+    <div class="head" id="head">
+        <div class="hrad-frame">
+            <a href="javascript:history.back()" class="return" title="return">
+                <ion-icon name="arrow-undo-outline" class="return"></ion-icon>
+            </a>
+
+            <h5 class="title">Kan Junzhe</h5>
+
+            <iframe width="500" scrolling="no" height="40" frameborder="0" allowtransparency="true"
+                src="https://i.tianqi.com?c=code&id=40&color=%23FFFFFF&icon=1&site=12" class="weather"></iframe>
+
+            <div class="controls">
+                <a href="index.html" class="home" target="_blank">&nbsp;Home&nbsp;</a>
+                <a href="about.html" class="about" target="_blank">&nbsp;About&nbsp;</a>
+                <a href="contact.html" class="contact" target="_blank">&nbsp;Contact&nbsp;</a>
+
+                <a href="user-info.html" class="userinfo">
+                    <img src="img/bm.png" alt="User Image" class="userimage">
+                </a>
+            </div>
+        </div>
+    </div>
+
     <div class="container">
         <div class="error">
             <h1>500</h1>
             <h2>error</h2>
-            <p>Ruh-roh, something just isn't right... Time to paw through your logs and get down and dirty in your
-                stack-trace;)</p>
+            <p>This is may not what you want, but we are very serious. We want to tell you in a special way that this is
+                not really a good time for you to visit the website. The server doesn't work!</p>
         </div>
         <div class="stack-container">
             <div class="card-container">
@@ -36,6 +62,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="card-container">
                 <div class="perspec" style="--spreaddist: 100px; --scaledist: .8; --vertdist: -20px;">
                     <div class="card">
@@ -53,6 +80,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="card-container">
                 <div class="perspec" style="--spreaddist:75px; --scaledist: .85; --vertdist: -15px;">
                     <div class="card">
@@ -70,6 +98,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="card-container">
                 <div class="perspec" style="--spreaddist: 50px; --scaledist: .9; --vertdist: -10px;">
                     <div class="card">
@@ -87,6 +116,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="card-container">
                 <div class="perspec" style="--spreaddist: 25px; --scaledist: .95; --vertdist: -5px;">
                     <div class="card">
@@ -104,6 +134,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="card-container">
                 <div class="perspec" style="--spreaddist: 0px; --scaledist: 1; --vertdist: 0px;">
                     <div class="card">
@@ -122,9 +153,10 @@
                 </div>
             </div>
         </div>
-
     </div>
 </body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 <script src="js/500.js"></script>
 
 </html>

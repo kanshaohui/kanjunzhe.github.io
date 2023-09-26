@@ -1,0 +1,50 @@
+div.body div.title {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    font-size: 6em;
+    font-weight: 600;
+    background: linear-gradient(220deg, #02dbb0, #007adf);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: translate(-50%, -50%);
+}
+
+div.body div.container {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    width: 90%;
+    transform: translate(-50%, 0);
+}
+
+div.body div.container div.origin,
+div.body div.container div.solution {
+    position: relative;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 60px;
+    /* padding-right: 60px; */
+    margin-top: 30px;
+    margin-left: -30px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0, 25px, 45px, rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    backdrop-filter: blur(50px);
+}
+
+div.body div.container div.subtitle span {
+    position: relative;
+    font-size: 4em;
+    font-weight: 600;
+    background: linear-gradient(140deg, #ffc107, #e91e63);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

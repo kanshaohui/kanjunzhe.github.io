@@ -28,10 +28,17 @@
 
             <h5 class="title">Kan Junzhe</h5>
 
+            <iframe width="500" scrolling="no" height="40" frameborder="0" allowtransparency="true"
+                src="https://i.tianqi.com?c=code&id=40&color=%23FFFFFF&icon=1&site=12" class="weather"></iframe>
+
             <div class="controls">
-                <a href="../index.html" class="home">&nbsp;Home&nbsp;</a>
-                <a href="../about.html" class="about">&nbsp;About&nbsp;</a>
-                <a href="../contact.html" class="contact">&nbsp;Contact&nbsp;</a>
+                <a href="../index.html" class="home" target="_blank">&nbsp;Home&nbsp;</a>
+                <a href="../about.html" class="about" target="_blank">&nbsp;About&nbsp;</a>
+                <a href="../contact.html" class="contact" target="_blank">&nbsp;Contact&nbsp;</a>
+
+                <a href="user-info.html" class="userinfo">
+                    <img src="img/bm.png" alt="User Image" class="userimage">
+                </a>
             </div>
         </div>
     </div>
@@ -177,22 +184,24 @@
                     <h2 style="--color-1: #02dbb0; --color-2: #007adf; --size: 3.4em;">Download</h2>
 
                     <div class="buttons">
-                        <a download="src/a-cypher-v1.0.0-sourcecode.zip" class="download" title="Download Source File">
+                        <a href="src/a-cypher-v1.0.0-sourcecode.zip" class="download" title="Download Source File"
+                            target="_blank">
                             <ion-icon name="cloud-download-outline"></ion-icon>
                             <span>Download Source File</span>
                         </a>
 
-                        <a href="https://github.com/kanjunzhe/a-cypher" class="github" title="Goto Github">
+                        <a href="https://github.com/kanjunzhe/cypher" class="github" title="Goto Github"
+                            target="_blank">
                             <ion-icon name="logo-github"></ion-icon>
                             <span>Goto Github</span>
                         </a>
 
-                        <a href="https://gitee.com/kanjunzhe/a-cypher" class="gitee" title="Goto Gitee">
+                        <a href="https://gitee.com/kanjunzhe/cypher" class="gitee" title="Goto Gitee" target="_blank">
                             <ion-icon src="../img/svg/gitee-svgrepo-com.svg"></ion-icon>
                             <span>Goto Gitee</span>
                         </a>
 
-                        <a href="../index.html" class="home" title="Go Home">
+                        <a href="../index.html" class="home" title="Go Home" target="_blank">
                             <ion-icon name="home-outline"></ion-icon>
                             <span>Go Home</span>
                         </a>
@@ -203,7 +212,7 @@
     </div>
 
     <div class="nail" style="--height: 2350px;">
-        <span>Kan Junzhe</span>
+        <span class="title">Kan Junzhe</span>
     </div>
 </body>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>

@@ -25,6 +25,7 @@
 }
 
 .body .content-wrap .content-frame.about {
+    position: relative;
     height: 450px;
 }
 
@@ -33,6 +34,7 @@
     font-size: 2em;
     background: linear-gradient(140deg, #ffc107, #e91e63);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     position: absolute;
     top: -20px;
@@ -151,8 +153,8 @@
 }
 
 .body .content-wrap .content-frame.products {
-    position: absolute;
-    top: 620px;
+    position: relative;
+    top: 80px;
     height: 2000px;
 }
 
@@ -166,6 +168,7 @@
     font-size: 3em;
     background: linear-gradient(220deg, #ffc107, #e91e63);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -268,6 +271,7 @@
     font-weight: 600;
     background: linear-gradient(220deg, #02dbb0, #007adf);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 

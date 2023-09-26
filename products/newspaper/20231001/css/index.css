@@ -1,0 +1,53 @@
+.body .title h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* width: 100%; */
+    transform: translate(-50%, -50%);
+    font-size: 6em;
+    font-weight: 600;
+    background: linear-gradient(220deg, #02dbb0, #007adf);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.body .list {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    width: 90%;
+    transform: translate(-50%, 0);
+}
+
+.body .list div.li {
+    position: relative;
+    padding-left: 100px;
+    padding-top: 0;
+    padding-bottom: 50px;
+    padding-right: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0, 25px, 45px, rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    backdrop-filter: blur(50px);
+}
+
+.body .list div.li h3 {
+    text-decoration: none;
+    font-size: 4em;
+    font-weight: 600;
+    background: linear-gradient(to right, #82b7a3, #67a7d1) no-repeat left bottom;
+    background-size: 0 8px;
+    transition: all 0.5s;
+}
+
+.body .list div.li h3:hover {
+    text-decoration: none;
+    background-size: 100% 5px;
+}

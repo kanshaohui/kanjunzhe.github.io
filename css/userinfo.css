@@ -1,0 +1,72 @@
+div.body div.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 40%;
+    transform: translate(-50%, -40%);
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0, 25px, 45px, rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    backdrop-filter: blur(50px);
+}
+
+div.body div.container div.content div.title {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 4em;
+    font-weight: 600;
+    font-family: 'Comic Sans MS', cursive;
+}
+
+div.body div.container div.icon {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+
+div.body div.container div.icon img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 8px solid #fff;
+}
+
+div.body div.container div.icon div.icon-text {
+    position: absolute;
+    top: 150px;
+    right: 0px;
+    width: 40px;
+    height: 40px;
+    background-color: #f66;
+    border: 5px solid #fff;
+    border-radius: 25px;
+    transition: all 0.8s;
+}
+
+div.body div.container div.icon div.icon-text:hover {
+    width: 200px;
+}
+
+div.body div.container div.icon div.icon-text span {
+    font-family: 'Lucida Console', Monaco, monospace;
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all 0.6s;
+    transition-delay: both 0.8s;
+}
+
+div.body div.container div.icon div.icon-text:hover span {
+    opacity: 1;
+}

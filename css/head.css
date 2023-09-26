@@ -41,11 +41,19 @@
     color: #fff;
 }
 
+.head .weather {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 黑体;
+}
+
 .head .controls {
     position: absolute;
     top: 20px;
-    left: 75%;
-    width: 25%;
+    right: 50px;
+    /* width: 35%; */
     height: 30px;
 }
 
@@ -74,4 +82,27 @@
 .head .controls a.active:hover {
     text-decoration: underline #103740 3px;
     text-underline-offset: 8px;
+}
+
+.head .controls a.userinfo .userimage {
+    position: absolute;
+    top: -5px;
+    right: -20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    transition: all 0.5s ease;
+}
+
+.head .controls a.userinfo:hover {
+    background-color: transparent;
+    color: transparent;
+}
+
+.head .controls a.userinfo:hover .userimage {
+    right: -25px;
+    top: -10px;
+    width: 40px;
+    height: 40px;
 }

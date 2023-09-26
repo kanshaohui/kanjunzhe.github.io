@@ -23,8 +23,6 @@ div.body div.content span {
     font-size: 2em;
     font-weight: 550;
     font-family: Verdana, Geneva, sans-serif;
-    background: linear-gradient(90deg, #02dbb0, #007adf);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #def;
     transform: translate(-50%, -50%);
 }

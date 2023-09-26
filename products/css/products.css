@@ -9,6 +9,7 @@ div.body div.content-title span {
     font-weight: 600;
     font-size: 6em;
     background: linear-gradient(220deg, #02dbb0, #007adf);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     z-index: 1;
@@ -121,6 +122,7 @@ div.body div.content-wrap div.instruction h2 {
     font-weight: 1000;
     font-family: "Trebuchet MS";
     background: linear-gradient(140deg, var(--color-1), var(--color-2));
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
