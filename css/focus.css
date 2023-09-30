@@ -5,7 +5,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     gap: 10px;
-    color: #fff;
+    color: #222;
     font-size: 8em;
     cursor: pointer;
     justify-content: center;
@@ -38,11 +38,11 @@
     left: 0;
     width: 6px;
     height: 20px;
-    background: #fff;
+    background: #222;
     box-shadow:
-        0 146px #fff,
-        100px 146px #fff,
-        100px 0 #fff;
+        0 146px #222,
+        100px 146px #222,
+        100px 0 #222;
 }
 
 .focus-wrap span:hover i::after {
@@ -52,9 +52,9 @@
     left: 0;
     width: 20px;
     height: 6px;
-    background: #fff;
+    background: #222;
     box-shadow:
-        0 161px #fff,
-        84px 161px #fff,
-        86px 0 #fff;
+        0 161px #222,
+        84px 161px #222,
+        86px 0 #222;
 }

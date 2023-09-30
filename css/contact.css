@@ -1,11 +1,8 @@
 div.body div.frame {
-    background-color: rgba(255, 255, 255, 0.1);
-    box-shadow: 0, 25px, 45px, rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-right: 1px solid rgba(255, 255, 255, 0.2);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
-    backdrop-filter: blur(50px);
+    border-radius: 51px;
+    background: #bababa;
+    box-shadow: 13px 13px 26px #4a4a4a,
+        -13px -13px 26px #ffffff;
 }
 
 div.body div.contact-show {
@@ -26,6 +23,7 @@ div.body h2 {
     font-family: Verdana, Geneva, sans-serif;
     background: linear-gradient(90deg, #02dbb0, #007adf);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     transform: translate(-50%, -50%);
 }
@@ -37,8 +35,10 @@ div.body div.contact-show a {
     left: 50%;
     top: var(--i);
     transform: translate(-50%, 0);
-    border-radius: 30px;
-    background-color: #f66;
+    border-radius: 51px;
+    background: #bababa;
+    box-shadow: 6px 6px 12px #4a4a4a,
+        -6px -6px 12px #ffffff;
     transition: all 0.5s;
 }
 
@@ -61,15 +61,10 @@ div.body div.contact-show a span {
 }
 
 div.body div.contact-show a:hover {
-    background-color: #33f;
-}
-
-div.body div.contact-show a:hover ion-icon {
-    color: #fff;
-}
-
-div.body div.contact-show a:hover span {
-    color: #fff;
+    border-radius: 51px;
+    background: #bababa;
+    box-shadow: inset 6px 6px 12px #4a4a4a,
+        inset -6px -6px 12px #ffffff;
 }
 
 div.body div.contact-mail {
@@ -86,6 +81,6 @@ div.body div.contact-mail span {
     top: 6em;
     left: 50%;
     font-size: 2em;
-    color: #fff;
+    color: #333;
     transform: translate(-50%, 0);
 }

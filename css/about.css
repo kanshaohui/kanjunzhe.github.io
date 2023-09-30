@@ -5,13 +5,10 @@ div.body div.content {
     width: 90%;
     height: 400px;
     transform: translate(-50%, 0);
-    background-color: rgba(255, 255, 255, 0.1);
-    box-shadow: 0, 25px, 45px, rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-right: 1px solid rgba(255, 255, 255, 0.2);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
-    backdrop-filter: blur(50px);
+    border-radius: 51px;
+    background: #c0bfbf;
+    box-shadow: 7px 7px 11px #4d4c4c,
+        -7px -7px 11px #ffffff;
 }
 
 div.body div.content span {
@@ -23,6 +20,6 @@ div.body div.content span {
     font-size: 2em;
     font-weight: 550;
     font-family: Verdana, Geneva, sans-serif;
-    color: #def;
+    color: #123;
     transform: translate(-50%, -50%);
 }

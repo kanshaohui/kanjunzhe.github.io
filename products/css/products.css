@@ -9,14 +9,14 @@ div.body div.content-title span {
     font-weight: 600;
     font-size: 6em;
     background: linear-gradient(220deg, #02dbb0, #007adf);
-    background-clip: text;
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     z-index: 1;
 }
 
 div.body div.content-title p {
-    color: #fff;
+    color: #000;
     position: absolute;
     left: -20%;
     width: 150%;
@@ -33,14 +33,10 @@ div.body div.icon-wrap {
     width: 30%;
     height: 50%;
     transform: translate(-50%, -50%);
-    gap: 60px;
-    background-color: rgba(255, 255, 255, 0.1);
-    box-shadow: 0, 25px, 45px, rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-right: 1px solid rgba(255, 255, 255, 0.2);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
-    backdrop-filter: blur(50px);
+    border-radius: 51px;
+    background: #bababa;
+    box-shadow: 13px 13px 26px #4a4a4a,
+        -13px -13px 26px #ffffff;
 }
 
 div.body div.icon-wrap div.code-quality {
@@ -77,14 +73,10 @@ div.body div.content-wrap div.instruction {
     width: 80%;
     height: var(--height2);
     transform: translate(-50%, -50%);
-    gap: 60px;
-    background-color: rgba(255, 255, 255, 0.1);
-    box-shadow: 0, 25px, 45px, rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-right: 1px solid rgba(255, 255, 255, 0.2);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
-    backdrop-filter: blur(50px);
+    border-radius: 51px;
+    background: #bababa;
+    box-shadow: 13px 13px 26px #4a4a4a,
+        -13px -13px 26px #ffffff;
 }
 
 div.body div.content-wrap div.instruction div.title-frame {
@@ -101,13 +93,17 @@ div.body div.content-wrap div.instruction div.frame {
     width: 95%;
     height: var(--height);
     transform: translate(-50%, 0);
-    background-color: rgba(255, 255, 255, 0.1);
-    box-shadow: 0, 25px, 45px, rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-right: 1px solid rgba(255, 255, 255, 0.2);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
-    backdrop-filter: blur(50px);
+    border-radius: 51px;
+    background: #bababa;
+    box-shadow: 13px 13px 26px #4a4a4a,
+        -13px -13px 26px #ffffff;
+}
+
+div.body div.content-wrap div.instruction div.frame:hover {
+    border-radius: 51px;
+    background: #bababa;
+    box-shadow: inset 13px 13px 26px #4a4a4a,
+        inset -13px -13px 26px #ffffff;
 }
 
 div.body div.content-wrap div.instruction div.frame h2 {
@@ -122,8 +118,8 @@ div.body div.content-wrap div.instruction h2 {
     font-weight: 1000;
     font-family: "Trebuchet MS";
     background: linear-gradient(140deg, var(--color-1), var(--color-2));
-    background-clip: text;
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -133,21 +129,22 @@ div.body div.content-wrap div.instruction span {
     left: 50%;
     width: 90%;
     transform: translate(-50%, 0);
+    color: #000;
     font-family: Courier, monospace;
     font-size: 1.5em;
     font-weight: bolder;
-    color: var(--color-span);
 }
 
 div.body div.content-wrap div.instruction div.download-frame .buttons a {
     position: absolute;
     width: 40%;
-    height: 40px;
+    height: 50px;
     left: 50%;
     transform: translate(-50%, 0);
-    border: #f66 solid 5px;
     border-radius: 25px;
-    background-color: #f66;
+    background: #bababa;
+    box-shadow: 6px 6px 12px #4a4a4a,
+        -6px -6px 12px #ffffff;
     transition: all 0.5s;
 }
 
@@ -198,14 +195,8 @@ div.body div.content-wrap div.instruction div.download-frame .buttons a span {
 }
 
 div.body div.content-wrap div.instruction div.download-frame .buttons a:hover {
-    background-color: #33f;
-    border: #33f solid 5px;
-}
-
-div.body div.content-wrap div.instruction div.download-frame .buttons a:hover ion-icon {
-    color: #fff;
-}
-
-div.body div.content-wrap div.instruction div.download-frame .buttons a:hover span {
-    color: #fff;
+    border-radius: 25px;
+    background: #bababa;
+    box-shadow: inset 6px 6px 12px #4a4a4a,
+        inset -6px -6px 12px #ffffff;
 }

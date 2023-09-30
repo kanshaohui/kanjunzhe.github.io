@@ -1,13 +1,14 @@
 .nail {
     position: relative;
-    top: var(--height);
-    /* top: 100%; */
-    /* bottom: 0; */
-    width: 100%;
+    top: calc(var(--height) + 700px);
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
     height: 100px;
-    background-color: #103740;
-    justify-content: center;
-    align-items: center;
+    border-radius: 51px;
+    background: #1f1f1f;
+    box-shadow: 7px 7px 11px #0c0c0c,
+        -7px -7px 11px #323232;
 }
 
 .nail span.title {
@@ -21,4 +22,9 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: Verdana;
+}
+
+.nail .space {
+    position: relative;
+    top: 30px;
 }

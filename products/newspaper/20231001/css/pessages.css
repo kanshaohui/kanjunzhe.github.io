@@ -22,21 +22,26 @@ div.body div.container {
 div.body div.container div.origin,
 div.body div.container div.solution {
     position: relative;
-    width: 100%;
+    width: 95%;
     padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 60px;
-    /* padding-right: 60px; */
+    padding-right: 60px;
     margin-top: 30px;
     margin-left: -30px;
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.1);
-    box-shadow: 0, 25px, 45px, rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-right: 1px solid rgba(255, 255, 255, 0.2);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
-    backdrop-filter: blur(50px);
+    border-radius: 39px;
+    background: #bababa;
+    box-shadow: 22px 22px 21px #939393,
+        -22px -22px 21px #e1e1e1;
+}
+
+div.body div.container div.origin:hover,
+div.body div.container div.solution:hover {
+    border-radius: 39px;
+    background: #bababa;
+    box-shadow: inset 22px 22px 21px #939393,
+        inset -22px -22px 21px #e1e1e1;
 }
 
 div.body div.container div.subtitle span {
@@ -47,4 +52,45 @@ div.body div.container div.subtitle span {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+div.body a {
+    text-decoration: none;
+}
+
+div.body div.back {
+    position: relative;
+    top: 50px;
+    left: 50%;
+    width: 50%;
+    height: 40px;
+    transform: translate(-50%, 0);
+    border-radius: 30px;
+    background: linear-gradient(145deg, #c7c7c7, #a7a7a7);
+    box-shadow: 6px 6px 9px #595959,
+        -6px -6px 9px #ffffff;
+}
+
+div.body div.back:hover {
+    background: linear-gradient(145deg, #a7a7a7, #c7c7c7);
+    box-shadow: inset 6px 6px 9px #595959,
+        inset -6px -6px 9px #ffffff;
+}
+
+div.body div.back ion-icon {
+    position: relative;
+    left: 10%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
+    color: #111;
+}
+
+div.body div.back span {
+    position: relative;
+    left: 50%;
+    top: 20%;
+    font-size: 1.5em;
+    transform: translate(-50%, -50%);
+    color: #111;
 }

@@ -20,29 +20,38 @@
     transform: translate(-50%, 0);
 }
 
+.body .list a {
+    text-decoration: none;
+}
+
 .body .list div.li {
     position: relative;
     padding-left: 100px;
-    padding-top: 0;
+    padding-top: 10px;
     padding-bottom: 50px;
     padding-right: 100px;
     margin-top: 20px;
-    margin-bottom: 20px;
-    color: #fff;
-    background-color: rgba(255, 255, 255, 0.1);
-    box-shadow: 0, 25px, 45px, rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-right: 1px solid rgba(255, 255, 255, 0.2);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
-    backdrop-filter: blur(50px);
+    margin-bottom: 50px;
+    color: #123;
+    border-radius: 51px;
+    background: #bababa;
+    box-shadow: 9px 9px 18px #4a4a4a,
+        -9px -9px 18px #ffffff;
+    text-decoration: none;
+}
+
+.body .list div.li:hover {
+    border-radius: 51px;
+    background: #bababa;
+    box-shadow: inset 9px 9px 18px #4a4a4a,
+        inset -9px -9px 18px #ffffff;
 }
 
 .body .list div.li h3 {
     text-decoration: none;
     font-size: 4em;
     font-weight: 600;
-    background: linear-gradient(to right, #82b7a3, #67a7d1) no-repeat left bottom;
+    background: linear-gradient(to right, #669181, #5183a4) no-repeat left bottom;
     background-size: 0 8px;
     transition: all 0.5s;
 }

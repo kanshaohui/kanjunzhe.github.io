@@ -5,13 +5,17 @@ div.body div.container {
     width: 50%;
     height: 40%;
     transform: translate(-50%, -40%);
-    background-color: rgba(255, 255, 255, 0.1);
-    box-shadow: 0, 25px, 45px, rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-right: 1px solid rgba(255, 255, 255, 0.2);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
-    backdrop-filter: blur(50px);
+    border-radius: 51px;
+    background: #bababa;
+    box-shadow: 9px 9px 18px #4a4a4a,
+        -9px -9px 18px #ffffff;
+}
+
+div.body div.container:hover {
+    border-radius: 51px;
+    background: #bababa;
+    box-shadow: inset 9px 9px 18px #4a4a4a,
+        inset -9px -9px 18px #ffffff;
 }
 
 div.body div.container div.content div.title {
@@ -19,7 +23,7 @@ div.body div.container div.content div.title {
     top: 50%;
     left: 20%;
     transform: translateY(-50%);
-    color: #fff;
+    color: #000;
     font-size: 4em;
     font-weight: 600;
     font-family: 'Comic Sans MS', cursive;
