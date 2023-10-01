@@ -1,11 +1,12 @@
 .head {
-    position: absolute;
+    position: fixed;
+    z-index: 1;
     top: 20px;
     left: 50%;
     width: 90%;
     height: 70px;
     transform: translate(-50%, 0);
-    border-radius: 51px;
+    border-radius: 50px;
     background: #3e3d3d;
     box-shadow: 7px 7px 11px #191818,
         -7px -7px 11px #636262;

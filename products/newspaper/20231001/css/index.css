@@ -1,20 +1,35 @@
 .body .title h1 {
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
-    /* width: 100%; */
+    overflow: hidden;
+    white-space: nowrap;
     transform: translate(-50%, -50%);
-    font-size: 6em;
-    font-weight: 600;
+    font-family: monospace;
+    font-size: 7em;
+    font-weight: 700;
     background: linear-gradient(220deg, #02dbb0, #007adf);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    animation: typing 5s steps(18, jump-none) both infinite;
+}
+
+@keyframes typing {
+
+    0%,
+    100% {
+        width: 0ch;
+    }
+
+    70% {
+        width: 18ch;
+    }
 }
 
 .body .list {
     position: absolute;
-    top: 90%;
+    top: 60%;
     left: 50%;
     width: 90%;
     transform: translate(-50%, 0);
@@ -49,14 +64,18 @@
 
 .body .list div.li h3 {
     text-decoration: none;
-    font-size: 4em;
+    font-size: clamp(1.5rem, 3vw, 6rem);
     font-weight: 600;
     background: linear-gradient(to right, #669181, #5183a4) no-repeat left bottom;
-    background-size: 0 8px;
+    background-size: 0 25px;
     transition: all 0.5s;
 }
 
 .body .list div.li h3:hover {
     text-decoration: none;
-    background-size: 100% 5px;
+    background-size: 100% 16px;
+}
+
+.body .list div.li span {
+    font-size: calc(clamp(1.5rem, 3vw, 6rem) * 0.4);
 }

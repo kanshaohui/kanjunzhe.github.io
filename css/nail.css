@@ -1,14 +1,15 @@
 .nail {
-    position: relative;
-    top: calc(var(--height) + 700px);
+    position: fixed;
+    /* top: calc(var(--height) + 700px); */
+    bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
     width: 90%;
-    height: 100px;
-    border-radius: 51px;
-    background: #1f1f1f;
-    box-shadow: 7px 7px 11px #0c0c0c,
-        -7px -7px 11px #323232;
+    height: 70px;
+    border-radius: 50px;
+    background: #3e3d3d;
+    box-shadow: 7px 7px 11px #191818,
+        -7px -7px 11px #636262;
 }
 
 .nail span.title {
@@ -20,11 +21,7 @@
     transform: translate(-50%, -50%);
     background: linear-gradient(220deg, #02dbb0, #007adf);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: Verdana;
-}
-
-.nail .space {
-    position: relative;
-    top: 30px;
 }
