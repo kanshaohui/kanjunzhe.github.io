@@ -1,7 +1,8 @@
 div.body div.title {
     position: absolute;
-    top: 30%;
+    top: 40%;
     left: 50%;
+    width: 90%;
     font-size: 6em;
     font-weight: 600;
     background: linear-gradient(220deg, #02dbb0, #007adf);
@@ -52,25 +53,6 @@ div.body div.container div.subtitle span {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    /* animation: gradient 10s linear both; */
-    /* animation-timeline: view(); */
-    /* animation-range: entry 50% cover 50%; */
-}
-
-@keyframes gradient {
-    0% {
-        background: linear-gradient(90deg, #ffc107 0%, #e91e63 100%);
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
-    100% {
-        background: linear-gradient(90deg, #ffc107 100%, #e91e63 0%);
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
 }
 
 div.body div.container div.content {
@@ -99,6 +81,16 @@ div.body div.container div.content :is(p, span) {
     }
 }
 
+@-webkit-keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 div.body div.container div.content p mark {
     background-color: transparent;
     background-image: linear-gradient(#73ffa0, #00ff73);
@@ -107,7 +99,7 @@ div.body div.container div.content p mark {
     background-position: 0 100%;
     animation: highli linear both;
     animation-timeline: view();
-    animation-range: entry 50% cover 40%;
+    animation-range: entry 50% cover 50%;
 }
 
 @keyframes highli {
@@ -120,14 +112,57 @@ div.body div.container div.content p mark {
     }
 }
 
-div.body div.container div.content span mark:hover {
-    animation: highlight 1s infinite;
+@-webkit-keyframes highli {
+    0% {
+        background-size: 0 38%;
+    }
+
+    100% {
+        background-size: 100% 38%;
+    }
 }
 
-div.body div.container div.content span.math {
-    font-family: "Times New Roman", Times, serif;
-    font-size: 1.5em;
+div.body div.container div.content :is(h3, h4, h5, h6) {
+    font-size: 1.2em;
+    font-weight: 600;
+    /* font-family: Tahoma, Geneva, sans-serif; */
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+    background: linear-gradient(90deg, #000, transparent);
+    background-size: 200%;
+    animation: reveal linear both;
+    animation-timeline: view();
+    background-repeat: no-repeat;
+    animation-range: entry 50% cover 50%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+div.body div.container div.content h6 {
+    font-size: 1em;
     font-weight: 500;
+}
+
+@keyframes reveal {
+    from {
+        background-position-x: 200%;
+    }
+
+    to {
+        background-position-x: 0%;
+    }
+}
+
+@-webkit-keyframes reveal {
+    from {
+        background-position-x: 200%;
+    }
+
+    to {
+        background-position-x: 0%;
+    }
 }
 
 div.body a {

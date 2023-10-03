@@ -59,25 +59,21 @@
     font-family: 黑体;
     color: #fff;
     font-size: 22px;
-    border-radius: 11px;
-    background: #1c1c1c;
-    box-shadow: 7px 7px 11px #0b0b0b,
-        -7px -7px 11px #2d2d2d;
+    border-radius: 10px;
+    background: #292929;
+    box-shadow: 5px 5px 2px #151515,
+        -5px -5px 2px #3d3d3d;
     text-decoration: none;
     transition: all 0.5s ease;
 }
 
 .head .controls a:hover {
-    border-radius: 11px;
-    background: #1c1c1c;
-    box-shadow: inset 7px 7px 11px #0b0b0b,
-        inset -7px -7px 11px #2d2d2d;
+    box-shadow: inset 5px 5px 2px #151515;
 }
 
 .head .controls a.active {
     text-decoration: underline #fff 3px;
     text-underline-offset: 8px;
-    padding-bottom: 15px;
 }
 
 .head .controls a.active:hover {

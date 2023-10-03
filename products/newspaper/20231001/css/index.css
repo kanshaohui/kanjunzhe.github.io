@@ -27,6 +27,18 @@
     }
 }
 
+@-webkit-keyframes typing {
+
+    0%,
+    100% {
+        width: 0ch;
+    }
+
+    70% {
+        width: 18ch;
+    }
+}
+
 .body .list {
     position: absolute;
     top: 60%;
@@ -74,6 +86,13 @@
 .body .list div.li h3:hover {
     text-decoration: none;
     background-size: 100% 16px;
+}
+
+.body .list div.li h5 {
+    position: relative;
+    font-size: calc(clamp(1.5rem, 3vw, 6rem) * 0.5);
+    font-weight: 400;
+
 }
 
 .body .list div.li span {
