@@ -1,3 +1,7 @@
+li {
+    list-style: none;
+}
+
 .head {
     position: fixed;
     z-index: 1;
@@ -108,4 +112,68 @@
     top: -10px;
     width: 40px;
     height: 40px;
+}
+
+.head .toggle-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.head .toggle-controls {
+    position: absolute;
+    right: 15px;
+    top: 100px;
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    background: #bababa;
+    box-shadow: 5px 5px 13px #8d8d8d,
+        -5px -5px 13px #e7e7e7;
+    opacity: 0;
+    overflow: hidden;
+    transform: translate(250px, 0);
+    transition: all 1s;
+}
+
+.head .toggle-controls.open {
+    transform: translate(0, 0);
+}
+
+.head .toggle-controls a {
+    text-decoration: none;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    color: #151515;
+}
+
+.head .toggle-controls a.active {
+    text-decoration: underline;
+}
+
+@media (max-width: 1200px) {
+    .head .weather {
+        opacity: 0;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .head .controls,
+    .head .weather {
+        opacity: 0;
+    }
+
+    .head .toggle-btn,
+    .head .toggle-controls {
+        opacity: 1;
+    }
 }

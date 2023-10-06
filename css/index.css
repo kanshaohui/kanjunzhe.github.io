@@ -16,8 +16,7 @@
 }
 
 .body .content-wrap .content-frame.about {
-    position: relative;
-    height: 450px;
+    height: 400px;
 }
 
 .body .content-wrap .content-frame.about .about-title {
@@ -27,27 +26,25 @@
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    position: absolute;
-    top: -20px;
-    left: 50%;
-    transform: translate(-50%, 0);
+    position: relative;
+    top: 20px;
+    left: 20px;
 }
 
-.body .content-wrap .content-frame.about .about-content {
+.body .content-wrap .content-frame.about .about-content div.smoke {
     font-family: "Times New Roman";
     font-size: 1.6em;
     color: #222;
-    position: absolute;
-    top: 80px;
-    left: 50%;
-    width: 50%;
-    transform: translate(-80%, 0);
+    position: relative;
+    left: 30px;
+    width: 64%;
 }
 
 .body .content-wrap .content-frame.about .about-content .icon-head {
     position: absolute;
-    left: 110%;
-    top: 0%;
+    right: 30px;
+    top: 50%;
+    transform: translate(0, -50%);
     width: 300px;
     height: 300px;
     background-color: #fff;
@@ -103,11 +100,9 @@
     top: 50%;
     transform: translate(-50%, -50%);
     font-family: Verdana, Geneva, sans-serif;
-    font-size: .9em;
-    /* overflow: hidden; */
+    font-size: 1.2em;
     opacity: 0;
     transition-delay: ease-in-out 0.5s;
-    /* transition: all 0.2s; */
 }
 
 .body .content-wrap .content-frame.about .about-content .icon-text-frame:hover {
@@ -138,9 +133,8 @@
     top: 50%;
     transform: translate(-50%, -50%);
     font-family: Verdana, Geneva, sans-serif;
-    font-size: .9em;
+    font-size: 1.2em;
     color: #fff;
-    /* overflow: hidden; */
     opacity: 1;
 }
 
@@ -331,4 +325,16 @@
 .body .content-wrap .content-frame.products .pf-frames .products-frame .products-buttons a:hover {
     box-shadow: inset 5px 5px 10px #737373,
         inset -5px -5px 10px #ffffff;
+}
+
+@media (max-width: 1000px) {
+    div.body div.content-wrap div.content-frame.about div.icon-head {
+        opacity: 0;
+    }
+
+    div.body div.content-wrap div.content-frame.about p {
+        width: 100%;
+        left: 0;
+        transform: translate(0, 0);
+    }
 }

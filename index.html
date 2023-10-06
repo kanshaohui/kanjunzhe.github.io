@@ -36,8 +36,25 @@
                     <img src="img/bm.png" alt="User Image" class="userimage">
                 </a>
             </div>
+
+            <div class="toggle-btn">
+                <ion-icon name="list-circle-outline"></ion-icon>
+            </div>
+            <div class="toggle-controls">
+                <ul>
+                    <li><a href="index.html" class="home active" target="_blank">Home</a>
+                    </li>
+                    <li><a href="about.html" class="about" target="_blank">About</a>
+                    </li>
+                    <li><a href="contact.html" class="contact" target="_blank">Contact</a>
+                    </li>
+                    <li><a href="user-info.html" class="userinfo">User Info</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
+    <script src="js/head.js"></script>
 
     <div class="focus-wrap">
         <span><i></i>K</span>
@@ -101,159 +118,165 @@
                 </div>
 
                 <div class="pf-frames">
-                    <div class="products-frame lockor-frame">
-                        <div class="pf-title">
-                            <ion-icon name="lock-closed-outline"></ion-icon>
-                            <span>LOCKOR</span>
+                    <div class="column-frame">
+                        <div class="products-frame lockor-frame">
+                            <div class="pf-title">
+                                <ion-icon name="lock-closed-outline"></ion-icon>
+                                <span>LOCKOR</span>
+                            </div>
+                            <div class="products-buttons">
+                                <a href="products/lockor.html" class="goto-products" title="Products:lockor"
+                                    target="_blank">
+                                    <ion-icon name="code-download-outline"></ion-icon>
+                                    <span>Details</span>
+                                </a>
+
+                                <a href="https://github.com/kanjunzhe/lockor" class="goto-github" title="Github:lockor"
+                                    target="_blank">
+                                    <ion-icon name="logo-github"></ion-icon>
+                                    <span>Github</span>
+                                </a>
+
+                                <a href="https://gitee.com/kanjunzhe/lockor" class="goto-gitee" title="Gitee:lockor"
+                                    target="_blank">
+                                    <ion-icon src="img/svg/gitee-svgrepo-com.svg"></ion-icon>
+                                    <span>Gitee</span>
+                                </a>
+                            </div>
                         </div>
-                        <div class="products-buttons">
-                            <a href="products/lockor.html" class="goto-products" title="Products:lockor"
-                                target="_blank">
-                                <ion-icon name="code-download-outline"></ion-icon>
-                                <span>Details</span>
-                            </a>
 
-                            <a href="https://github.com/kanjunzhe/lockor" class="goto-github" title="Github:lockor"
-                                target="_blank">
-                                <ion-icon name="logo-github"></ion-icon>
-                                <span>Github</span>
-                            </a>
+                        <div class="products-frame er-frame">
+                            <div class="pf-title">
+                                <ion-icon name="mic-circle-outline"></ion-icon>
+                                <span>EVENT RECORDER</span>
+                            </div>
+                            <div class="products-buttons">
+                                <a href="products/event-recorder.html" class="goto-products"
+                                    title="Products:Event Recorder" target="_blank">
+                                    <ion-icon name="code-download-outline"></ion-icon>
+                                    <span>Details</span>
+                                </a>
 
-                            <a href="https://gitee.com/kanjunzhe/lockor" class="goto-gitee" title="Gitee:lockor"
-                                target="_blank">
-                                <ion-icon src="img/svg/gitee-svgrepo-com.svg"></ion-icon>
-                                <span>Gitee</span>
-                            </a>
-                        </div>
-                    </div>
+                                <a href="https://github.com/kanjunzhe/event-recorder" class="goto-github"
+                                    title="Github:Event Recorder" target="_blank">
+                                    <ion-icon name="logo-github"></ion-icon>
+                                    <span>Github</span>
+                                </a>
 
-                    <div class="products-frame er-frame">
-                        <div class="pf-title">
-                            <ion-icon name="mic-circle-outline"></ion-icon>
-                            <span>EVENT RECORDER</span>
-                        </div>
-                        <div class="products-buttons">
-                            <a href="products/event-recorder.html" class="goto-products" title="Products:Event Recorder"
-                                target="_blank">
-                                <ion-icon name="code-download-outline"></ion-icon>
-                                <span>Details</span>
-                            </a>
-
-                            <a href="https://github.com/kanjunzhe/event-recorder" class="goto-github"
-                                title="Github:Event Recorder" target="_blank">
-                                <ion-icon name="logo-github"></ion-icon>
-                                <span>Github</span>
-                            </a>
-
-                            <a href="https://gitee.com/kanjunzhe/event-recorder" class="goto-gitee"
-                                title="Gitee:Event Recorder" target="_blank">
-                                <ion-icon src="img/svg/gitee-svgrepo-com.svg"></ion-icon>
-                                <span>Gitee</span>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="products-frame cypher-frame">
-                        <div class="pf-title">
-                            <ion-icon name="document-lock-outline"></ion-icon>
-                            <span>A- CYPHER</span>
-                        </div>
-                        <div class="products-buttons">
-                            <a href="products/a-cypher.html" class="goto-products" title="Products:Cypher"
-                                target="_blank">
-                                <ion-icon name="code-download-outline"></ion-icon>
-                                <span>Details</span>
-                            </a>
-
-                            <a href="https://github.com/kanjunzhe/cypher" class="goto-github" title="Github:Cypher"
-                                target="_blank">
-                                <ion-icon name="logo-github"></ion-icon>
-                                <span>Github</span>
-                            </a>
-
-                            <a href="https://gitee.com/kanjunzhe/cypher" class="goto-gitee" title="Gitee:Cypher"
-                                target="_blank">
-                                <ion-icon src="img/svg/gitee-svgrepo-com.svg"></ion-icon>
-                                <span>Gitee</span>
-                            </a>
+                                <a href="https://gitee.com/kanjunzhe/event-recorder" class="goto-gitee"
+                                    title="Gitee:Event Recorder" target="_blank">
+                                    <ion-icon src="img/svg/gitee-svgrepo-com.svg"></ion-icon>
+                                    <span>Gitee</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="products-frame bs-frame">
-                        <div class="pf-title">
-                            <ion-icon name="bug-outline"></ion-icon>
-                            <span>BLUE SCREEN</span>
+                    <div class="column-frame">
+                        <div class="products-frame cypher-frame">
+                            <div class="pf-title">
+                                <ion-icon name="document-lock-outline"></ion-icon>
+                                <span>A- CYPHER</span>
+                            </div>
+                            <div class="products-buttons">
+                                <a href="products/a-cypher.html" class="goto-products" title="Products:Cypher"
+                                    target="_blank">
+                                    <ion-icon name="code-download-outline"></ion-icon>
+                                    <span>Details</span>
+                                </a>
+
+                                <a href="https://github.com/kanjunzhe/cypher" class="goto-github" title="Github:Cypher"
+                                    target="_blank">
+                                    <ion-icon name="logo-github"></ion-icon>
+                                    <span>Github</span>
+                                </a>
+
+                                <a href="https://gitee.com/kanjunzhe/cypher" class="goto-gitee" title="Gitee:Cypher"
+                                    target="_blank">
+                                    <ion-icon src="img/svg/gitee-svgrepo-com.svg"></ion-icon>
+                                    <span>Gitee</span>
+                                </a>
+                            </div>
                         </div>
-                        <div class="products-buttons">
-                            <a href="products/blue-screen.html" class="goto-products" title="Products:Blue Screen"
-                                target="_blank">
-                                <ion-icon name="code-download-outline"></ion-icon>
-                                <span>Details</span>
-                            </a>
 
-                            <a href="https://github.com/kanjunzhe/blue-screen" class="goto-github"
-                                title="Github:Blue Screen" target="_blank">
-                                <ion-icon name="logo-github"></ion-icon>
-                                <span>Github</span>
-                            </a>
+                        <div class="products-frame bs-frame">
+                            <div class="pf-title">
+                                <ion-icon name="bug-outline"></ion-icon>
+                                <span>BLUE SCREEN</span>
+                            </div>
+                            <div class="products-buttons">
+                                <a href="products/blue-screen.html" class="goto-products" title="Products:Blue Screen"
+                                    target="_blank">
+                                    <ion-icon name="code-download-outline"></ion-icon>
+                                    <span>Details</span>
+                                </a>
 
-                            <a href="https://gitee.com/kanjunzhe/blue-screen" class="goto-gitee"
-                                title="Gitee:Blue Screen" target="_blank">
-                                <ion-icon src="img/svg/gitee-svgrepo-com.svg"></ion-icon>
-                                <span>Gitee</span>
-                            </a>
+                                <a href="https://github.com/kanjunzhe/blue-screen" class="goto-github"
+                                    title="Github:Blue Screen" target="_blank">
+                                    <ion-icon name="logo-github"></ion-icon>
+                                    <span>Github</span>
+                                </a>
+
+                                <a href="https://gitee.com/kanjunzhe/blue-screen" class="goto-gitee"
+                                    title="Gitee:Blue Screen" target="_blank">
+                                    <ion-icon src="img/svg/gitee-svgrepo-com.svg"></ion-icon>
+                                    <span>Gitee</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="products-frame stones-frame">
-                        <div class="pf-title">
-                            <ion-icon name="american-football-outline"></ion-icon>
-                            <span>STONES</span>
+                    <div class="column-frame">
+                        <div class="products-frame stones-frame">
+                            <div class="pf-title">
+                                <ion-icon name="american-football-outline"></ion-icon>
+                                <span>STONES</span>
+                            </div>
+                            <div class="products-buttons">
+                                <a href="products/stones.html" class="goto-products" title="Products:Stones"
+                                    target="_blank">
+                                    <ion-icon name="code-download-outline"></ion-icon>
+                                    <span>Details</span>
+                                </a>
+
+                                <a href="https://github.com/kanjunzhe/stones" class="goto-github" title="Github:Stones"
+                                    target="_blank">
+                                    <ion-icon name="logo-github"></ion-icon>
+                                    <span>Github</span>
+                                </a>
+
+                                <a href="https://gitee.com/kanjunzhe/stones" class="goto-gitee" title="Gitee:Stones"
+                                    target="_blank">
+                                    <ion-icon src="img/svg/gitee-svgrepo-com.svg"></ion-icon>
+                                    <span>Gitee</span>
+                                </a>
+                            </div>
                         </div>
-                        <div class="products-buttons">
-                            <a href="products/stones.html" class="goto-products" title="Products:Stones"
-                                target="_blank">
-                                <ion-icon name="code-download-outline"></ion-icon>
-                                <span>Details</span>
-                            </a>
 
-                            <a href="https://github.com/kanjunzhe/stones" class="goto-github" title="Github:Stones"
-                                target="_blank">
-                                <ion-icon name="logo-github"></ion-icon>
-                                <span>Github</span>
-                            </a>
+                        <div class="products-frame add-frame">
+                            <div class="pf-title">
+                                <ion-icon name="newspaper-outline"></ion-icon>
+                                <span>NEWS</span>
+                            </div>
+                            <div class="products-buttons">
+                                <a href="products/newspaper/index.html" class="goto-products" title="Products:More"
+                                    target="_blank">
+                                    <ion-icon name="code-download-outline"></ion-icon>
+                                    <span>Details</span>
+                                </a>
 
-                            <a href="https://gitee.com/kanjunzhe/stones" class="goto-gitee" title="Gitee:Stones"
-                                target="_blank">
-                                <ion-icon src="img/svg/gitee-svgrepo-com.svg"></ion-icon>
-                                <span>Gitee</span>
-                            </a>
-                        </div>
-                    </div>
+                                <a href="https://github.com/kanjunzhe" class="goto-github" title="Github:kanjunzhe"
+                                    target="_blank">
+                                    <ion-icon name="logo-github"></ion-icon>
+                                    <span>Github</span>
+                                </a>
 
-                    <div class="products-frame add-frame">
-                        <div class="pf-title">
-                            <ion-icon name="newspaper-outline"></ion-icon>
-                            <span>NEWS</span>
-                        </div>
-                        <div class="products-buttons">
-                            <a href="products/newspaper/index.html" class="goto-products" title="Products:More"
-                                target="_blank">
-                                <ion-icon name="code-download-outline"></ion-icon>
-                                <span>Details</span>
-                            </a>
-
-                            <a href="https://github.com/kanjunzhe" class="goto-github" title="Github:kanjunzhe"
-                                target="_blank">
-                                <ion-icon name="logo-github"></ion-icon>
-                                <span>Github</span>
-                            </a>
-
-                            <a href="https://gitee.com/kanjunzhe" class="goto-gitee" title="Gitee:kanjunzhe"
-                                target="_blank">
-                                <ion-icon src="img/svg/gitee-svgrepo-com.svg"></ion-icon>
-                                <span>Gitee</span>
-                            </a>
+                                <a href="https://gitee.com/kanjunzhe" class="goto-gitee" title="Gitee:kanjunzhe"
+                                    target="_blank">
+                                    <ion-icon src="img/svg/gitee-svgrepo-com.svg"></ion-icon>
+                                    <span>Gitee</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -261,7 +284,7 @@
         </div>
     </div>
 
-    <div class="nail" style="--height: 2650px;">
+    <div class="nail">
         <span class="title">Kan Junzhe</span>
         <div class="space"></div>
     </div>

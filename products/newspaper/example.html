@@ -14,8 +14,6 @@
 </head>
 
 <body>
-    <div class="background" id="background"></div>
-
     <div class="head" id="head">
         <div class="hrad-frame">
             <a href="javascript:history.back()" class="return" title="return">
@@ -28,16 +26,33 @@
                 src="https://i.tianqi.com?c=code&id=40&color=%23FFFFFF&icon=1&site=12" class="weather"></iframe>
 
             <div class="controls">
-                <a href="index.html" class="home" target="_blank">&nbsp;Home&nbsp;</a>
-                <a href="about.html" class="about" target="_blank">&nbsp;About&nbsp;</a>
-                <a href="contact.html" class="contact" target="_blank">&nbsp;Contact&nbsp;</a>
+                <a href="../../../index.html" class="home active" target="_blank">&nbsp;Home&nbsp;</a>
+                <a href="../../../about.html" class="about" target="_blank">&nbsp;About&nbsp;</a>
+                <a href="../../../contact.html" class="contact" target="_blank">&nbsp;Contact&nbsp;</a>
 
-                <a href="user-info.html" class="userinfo">
+                <a href="../../../user-info.html" class="userinfo">
                     <img src="../../../img/bm.png" alt="User Image" class="userimage">
                 </a>
             </div>
+
+            <div class="toggle-btn">
+                <ion-icon name="list-circle-outline"></ion-icon>
+            </div>
+            <div class="toggle-controls">
+                <ul>
+                    <li><a href="../index.html" class="home" target="_blank">Home</a>
+                    </li>
+                    <li><a href="../about.html" class="about" target="_blank">About</a>
+                    </li>
+                    <li><a href="../contact.html" class="contact" target="_blank">Contact</a>
+                    </li>
+                    <li><a href="../user-info.html" class="userinfo">User Info</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
+    <script src="../js/head.js"></script>
 
     <div class="body">
         <div class="title">

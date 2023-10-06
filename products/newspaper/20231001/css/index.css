@@ -109,7 +109,7 @@
     transition: all 0.5s;
 }
 
-.body .list div.li h3:hover {
+.body .list div.li:hover h3 {
     text-decoration: none;
     background-size: 100% 16px;
 }

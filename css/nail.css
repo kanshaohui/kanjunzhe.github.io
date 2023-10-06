@@ -17,11 +17,12 @@
     top: 50%;
     left: 50%;
     font-weight: 600;
-    font-size: 3em;
+    font-size: clamp(1em, 3em, 4em);
     transform: translate(-50%, -50%);
     background: linear-gradient(220deg, #02dbb0, #007adf);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: Verdana;
+    white-space: nowrap;
 }

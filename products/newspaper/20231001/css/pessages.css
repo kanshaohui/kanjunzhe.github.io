@@ -3,7 +3,7 @@ div.body div.title {
     top: 40%;
     left: 50%;
     width: 90%;
-    font-size: 6em;
+    font-size: clamp(2em, 5em, 6em);
     font-weight: 600;
     background: linear-gradient(220deg, #02dbb0, #007adf);
     -webkit-background-clip: text;
@@ -23,13 +23,14 @@ div.body div.container {
 div.body div.container div.origin,
 div.body div.container div.solution {
     position: relative;
-    width: 95%;
+    /* width: 95%; */
     padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 60px;
     padding-right: 60px;
-    margin-top: 30px;
+    margin-top: 65px;
     margin-left: -30px;
+    margin-right: 10px;
     border-radius: 10px;
     border-radius: 39px;
     background: #bababa;
@@ -125,7 +126,6 @@ div.body div.container div.content p mark {
 div.body div.container div.content :is(h3, h4, h5, h6) {
     font-size: 1.2em;
     font-weight: 600;
-    /* font-family: Tahoma, Geneva, sans-serif; */
     margin: 0;
     margin-bottom: 10px;
     padding: 0;
@@ -163,6 +163,11 @@ div.body div.container div.content h6 {
     to {
         background-position-x: 0%;
     }
+}
+
+div.body div.container div.space,
+div.body div.container div.space:hover {
+    box-shadow: none;
 }
 
 div.body a {
@@ -204,4 +209,15 @@ div.body div.back span {
     font-size: 1.5em;
     transform: translate(-50%, -50%);
     color: #111;
+    white-space: nowrap;
+}
+
+@media (max-width: 1000px) {
+    div.body div.back ion-icon {
+        opacity: 0;
+    }
+
+    div.body div.back span {
+        left: 0;
+    }
 }

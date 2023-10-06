@@ -1,7 +1,9 @@
-let head = document.querySelector(".head");
+const toggleBtn = document.querySelector('.head .toggle-btn');
+const toggleBtnIcon = document.querySelector(".htad .toggle-btn ion-icon")
+const dropdownMenu = document.querySelector(".head .toggle-controls")
 
-window.addEventListener("scroll", (event) => function () {
-    var value = window.scrollY;
-    // head.computedStyleMap.get("--scrollY").value = value + "px";
-    head.style.top = value * 1 + "px";
+toggleBtn.addEventListener('click', () => {
+    dropdownMenu.classList.toggle("open");
+    const isOpen = dropdownMenu.classList.contains("open");
+    toggleBtnIcon.setAttribute("name", isOpen ? "close-circle-outline" : "list-circle-outline")
 });
